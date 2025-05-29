@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
-    //global vars
     const form = document.querySelector('.login-form');
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -14,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailError = document.getElementById('email-error');
     const messageError = document.getElementById('message-error');
   
-    // login form
     if (form) {
       const usernameInput = document.getElementById('username');
       const passwordInput = document.getElementById('password');
