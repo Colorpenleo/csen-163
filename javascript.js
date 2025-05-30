@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (signOutButton) {
       signOutButton.addEventListener('click', () => {
         localStorage.removeItem('loggedInUser');
-        window.location.href = 'loginpage.html';
+        window.location.href = 'login.html';
       });
     }
   
