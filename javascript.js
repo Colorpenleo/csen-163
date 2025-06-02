@@ -132,4 +132,29 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
-  
+
+document.addEventListener("DOMContentLoaded", () => {
+  const stars = document.querySelectorAll(".toggle-star");
+
+  stars.forEach(star => {
+    star.addEventListener("click", () => {
+      const filled = "images/filled-star.jpeg";
+      const notFilled = "images/not-filled-star.png";
+
+      star.src = star.src.includes("not-filled-star.png") ? filled : notFilled;
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("genderPopup");
+  const genderOptions = document.querySelectorAll(".gender-option");
+
+  genderOptions.forEach(option => {
+    option.addEventListener("click", () => {
+      popup.style.display = "none";
+      // Optional: store the gender selection if needed
+      // localStorage.setItem("gender", option.dataset.gender);
+    });
+  });
+});

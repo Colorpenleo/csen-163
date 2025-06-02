@@ -99,3 +99,64 @@ h3
     border-radius: 6px;
     padding: 10px;
 }
+
+
+
+.gender-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e9e8e0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gender-popup-content {
+  text-align: center;
+}
+
+.gender-options-row {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.gender-option {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.gender-option img {
+  width: 300px;
+  height: auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.gender-option button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.gender-question {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
