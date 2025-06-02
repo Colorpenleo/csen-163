@@ -66,3 +66,19 @@
     color: #4A4459;
   }
   
+  .faq-footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #49454F; /* matches your question text color */
+  }
+  
+  .faq-footer a {
+    color: #007bff; /* or whatever primary link color you use */
+    text-decoration: underline;
+  }
+  
+  .faq-footer a:hover {
+    opacity: 0.8;
+  }
+  
