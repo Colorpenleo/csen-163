@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!hasError) {
           const username = usernameInput.value.trim();
           localStorage.setItem('loggedInUser', username);
-          window.location.href = 'ideapage.html';
+          window.location.href = 'thrift-store.html';
         }
       });
     }
