@@ -4,50 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Top Collection – Virtual AR Thrift Buddy</title>
-  <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="thrift-store.css" />
+  <link rel="stylesheet" href="tops-collection.css" />
   <style>
     .saved-list {
       background-color: #fff;
-      border: 2px solid #bbb;
-      padding: 1rem;
-      margin-top: 1rem;
-      border-radius: 8px;
+      border: 1px solid #bbb;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 10px;
     }
+
     .saved-item {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
-  <div class="navbar">
-    <div class="nav-side">
-      <img src="images/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" />
-      <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
-    </div>
-    <button class="hamburger" id="hamburger">&#9776;</button>
-    <div class="nav-center">
-      <div class="nav-links" id="nav-links">
-        <a href="thrift-store.html">Home</a>
-        <a href="recycle.html">Learn Recycling</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-    <div class="nav-side-right">
-      <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
-      <div class="user-menu-wrapper">
-        <img src="images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon" />
-        <div class="user-popup" id="user-popup">
-          <button id="sign-out-button">Sign Out</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <main class="thrift-container">
-    <h1 class="tops-title">Tops Collection</h1>
     <div class="location-bar">
+      <h2>Tops Collection</h2>
       <input type="text" class="location-search" placeholder="Filter by keyword..." />
       <button class="starred-btn" onclick="showSaved()">Saved Tops</button>
     </div>
@@ -60,61 +36,6 @@
     </div>
   </main>
 
-  <script>
-    const tops = [
-      { name: "Asymmetric Black Top", img: "images/black.jpg" },
-      { name: "Strapless Red Top", img: "images/red.jpg" },
-      { name: "Crew Orange Top", img: "images/orange.jpg" },
-      { name: "Gathered Pink Top", img: "images/pink.jpg" },
-      { name: "Mock Turtle Blue Top", img: "images/blue.jpg" },
-      { name: "Wrap Navy Blue Top", img: "images/navy.jpg" },
-      { name: "Striped Boat Top", img: "images/striped.jpg" },
-      { name: "Strapless Blue Top", img: "images/flowerblue.jpg" },
-    ];
-
-    const savedTops = new Set();
-    const grid = document.getElementById("topsGrid");
-
-    tops.forEach((top, index) => {
-      const card = document.createElement("div");
-      card.className = "store-card";
-      card.innerHTML = `
-        <img src="images/not-filled-star.png" class="star-icon toggle-star" onclick="toggleStar(this, ${index})" />
-        <a href="#" class="store-link">
-          <img src="${top.img}" class="store-img" alt="${top.name}" />
-          <p class="store-name">${top.name}</p>
-        </a>
-      `;
-      grid.appendChild(card);
-    });
-
-    function toggleStar(elem, index) {
-      const name = tops[index].name;
-      const isSaved = savedTops.has(name);
-      if (isSaved) {
-        savedTops.delete(name);
-        elem.src = "images/not-filled-star.png";
-      } else {
-        savedTops.add(name);
-        elem.src = "images/filled-star.png";
-      }
-    }
-
-    function showSaved() {
-      const savedList = document.getElementById("savedList");
-      const savedItems = document.getElementById("savedItems");
-      savedItems.innerHTML = "";
-
-      savedTops.forEach(name => {
-        const p = document.createElement("p");
-        p.className = "saved-item";
-        p.textContent = name;
-        savedItems.appendChild(p);
-      });
-
-      savedList.style.display = "block";
-    }
-  </script>
-  <script src="javascript.js"></script>
+  <script src="javascript-t.js"></script>
 </body>
 </html>
