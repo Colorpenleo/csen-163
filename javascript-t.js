@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: "Pink top", img: "images/7.png" },
         { name: "White top", img: "images/8.png" },
 	{ name: "shortsleeve white top", img: "images/9.png" },
-        { name: "long grey coat.png", img: "images/10.png" }
+        { name: "long grey coat", img: "images/10.png" }
     ];
 
     const savedTops = new Set();
