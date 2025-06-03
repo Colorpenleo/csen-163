@@ -16,7 +16,7 @@ a {
   color: inherit;
 }
 
-h2 {
+.thrift-container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
