@@ -11,7 +11,7 @@
   /* Container & headings */
   .contact-container {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0 1rem;
     text-align: center;
   }
@@ -19,8 +19,7 @@
   .contact-container h1 {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #1D1B20;
+    color: #2c5f2d;
   }
   
   .contact-subhead {

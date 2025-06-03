@@ -17,10 +17,12 @@ a
     color: black;
 }
 
-h1
-{
-    text-align: center;
-    margin-top: 100px;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #categories

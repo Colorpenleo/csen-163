@@ -104,3 +104,25 @@ h2 {
   font-weight: bold;
   color: #333;
 }
+
+/* Container & headings */
+.contact-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c5f2d;
+}
+
+.contact-subhead {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #49454F;
+  margin-bottom: 2rem;
+}
