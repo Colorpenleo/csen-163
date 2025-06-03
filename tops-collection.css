@@ -11,6 +11,14 @@ a {
   color: inherit;
 }
 
+.top-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
 
 .thrift-container {
   max-width: 1200px;
