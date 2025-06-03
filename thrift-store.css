@@ -14,6 +14,14 @@ a {
   color: black;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  text-align: center;
+  margin-top: 50px;
+}
+
 h2 {
   font-size: 1.8rem;
 }
@@ -125,4 +133,13 @@ h2 {
   font-weight: 600;
   color: #49454F;
   margin-bottom: 2rem;
+}
+
+.tops-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
